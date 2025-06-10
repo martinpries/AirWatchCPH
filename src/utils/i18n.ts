@@ -32,9 +32,9 @@ export async function loadLanguageFiles(): Promise<Record<string, LanguageConten
  * Get nested value from object using dot notation
  */
 export function getNestedValue(obj: LanguageContent, path: string): string {
-  return path.split('.').reduce((current: any, key: string) => {
+  return path.split('.').reduce((current: LanguageContent | string, key: string) => {
     if (current && typeof current === 'object' && key in current) {
-      return current[key];
+      return (current as LanguageContent)[key];
     }
     return path; // Return the path itself if not found (fallback)
   }, obj) as string;

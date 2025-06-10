@@ -88,21 +88,22 @@ export function getAvailableTypes(items: TimelineItem[]): string[] {
 /**
  * Validate if an object is a valid TimelineItem
  */
-function isValidTimelineItem(item: any): item is TimelineItem {
+function isValidTimelineItem(item: unknown): item is TimelineItem {
   return (
     typeof item === 'object' &&
-    typeof item.title === 'string' &&
-    typeof item.date === 'string' &&
-    typeof item.publisher === 'string' &&
-    typeof item.author === 'string' &&
-    typeof item.short_description === 'string' &&
-    typeof item.long_description === 'string' &&
-    typeof item.type === 'string' &&
+    item !== null &&
+    typeof (item as Record<string, unknown>).title === 'string' &&
+    typeof (item as Record<string, unknown>).date === 'string' &&
+    typeof (item as Record<string, unknown>).publisher === 'string' &&
+    typeof (item as Record<string, unknown>).author === 'string' &&
+    typeof (item as Record<string, unknown>).short_description === 'string' &&
+    typeof (item as Record<string, unknown>).long_description === 'string' &&
+    typeof (item as Record<string, unknown>).type === 'string' &&
     // Make reference and link optional - they can be null or undefined
-    (typeof item.reference === 'string' || item.reference == null) &&
-    (typeof item.link === 'string' || item.link == null) &&
-    isValidDate(item.date) &&
-    isValidType(item.type)
+    (typeof (item as Record<string, unknown>).reference === 'string' || (item as Record<string, unknown>).reference == null) &&
+    (typeof (item as Record<string, unknown>).link === 'string' || (item as Record<string, unknown>).link == null) &&
+    isValidDate((item as Record<string, unknown>).date as string) &&
+    isValidType((item as Record<string, unknown>).type as string)
   );
 }
 

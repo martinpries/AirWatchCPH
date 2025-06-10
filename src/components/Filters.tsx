@@ -140,11 +140,10 @@ export const Filters: React.FC<FiltersProps> = ({
             <div>
               <h4 className="text-xs font-medium text-gray-700 mb-2 uppercase tracking-wide">
                 Content Types
-              </h4>
+              </h4>              
               <div className="flex flex-wrap gap-1.5">
                 {availableTypes.map((type) => {
-                  const configs = TYPE_CONFIG as any;
-                  const typeConfig = configs[type] || configs.news;
+                  const typeConfig = TYPE_CONFIG[type] || TYPE_CONFIG.news;
                   const isSelected = selectedTypes.includes(type);
                   
                   return (

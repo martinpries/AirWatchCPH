@@ -48,7 +48,6 @@ function App() {
       return fallback || key;
     };
   }, [languages, currentLanguage]);
-
   // Load data on component mount
   useEffect(() => {
     const loadData = async () => {
@@ -64,7 +63,7 @@ function App() {
         setError(null);
       } catch (err) {
         console.error('Failed to load data:', err);
-        setError(t('messages.error_loading'));
+        setError('Failed to load data. Please try refreshing the page.');
       } finally {
         setLoading(false);
       }

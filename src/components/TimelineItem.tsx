@@ -12,11 +12,9 @@ interface TimelineItemProps {
 export const TimelineItem: React.FC<TimelineItemProps> = ({ item, index, t }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const isEven = index % 2 === 0;
-  
-  // Get type configuration with fallback
+    // Get type configuration with fallback
   const getTypeConfig = (type: string) => {
-    const configs = TYPE_CONFIG as any;
-    return configs[type] || configs.news;
+    return TYPE_CONFIG[type as keyof typeof TYPE_CONFIG] || TYPE_CONFIG.news;
   };
   
   const typeConfig = getTypeConfig(item.type);
