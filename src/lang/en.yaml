@@ -1,0 +1,93 @@
+app:
+  title: "AirWatch CPH"
+  subtitle: "Ultrafine Particles & Environmental Impact at Copenhagen Airport"
+  description: "Tracking environmental issues, ultrafine particle studies, and air quality discussions related to Københavns Lufthavn"
+
+navigation:
+  all_years: "All Years"
+  back_to_top: "Back to Top"
+
+timeline:
+  loading: "Loading timeline data..."
+  no_data: "No data available"
+  expand: "Read More"
+  collapse: "Show Less"
+  external_link: "Visit Source"
+
+filters:
+  title: "Filter Content"
+  all_types: "All Types"
+  search_placeholder: "Search timeline..."
+  clear_search: "Clear Search"
+  clear_filters: "Clear All Filters"
+
+types:
+  news: "News"
+  scientific: "Scientific Study"
+  report: "Report"
+  government: "Government"
+  company: "Company Statement"
+  political: "Political"
+  organization: "Organization"
+  expert: "Expert Analysis"
+  social: "Social Media"
+
+item_fields:
+  date: "Date"
+  author: "Author"
+  publisher: "Publisher"
+  reference: "Reference"
+  type: "Type"
+  source: "Source"
+
+language:
+  switcher: "Language"
+  english: "English"
+  danish: "Danish"
+
+footer:
+  github: "View on GitHub"
+  contribute: "Contribute Data"
+  about: "About This Project"
+
+messages:
+  search_no_results: "No results found for your search"
+  filter_no_results: "No items match the selected filters"
+  error_loading: "Error loading timeline data"
+  try_again: "Try Again"
+
+add_data:
+  title: "Contribute Data"
+  subtitle: "Help Build the Timeline"
+  description: "AirWatch CPH is a community-driven project that tracks air quality news, reports, and developments related to Copenhagen Airport."
+  what_we_accept: "What We Accept"
+  how_to_contribute: "How to Contribute"
+  step1: "Visit our GitHub repository"
+  step1_desc: "Navigate to the Issues section of our GitHub project"
+  step2: "Create a new issue"
+  step2_desc: "Use the 'New Data Point' template to submit your information"
+  step3: "Fill in the details"
+  step3_desc: "Provide title, date, source, description, and any relevant links"
+  step4: "Submit and review"
+  step4_desc: "Our team will review and add your contribution to the timeline"
+  button_github: "Add Data on GitHub"
+  button_close: "Close"
+  types:
+    news: "News Articles"
+    news_desc: "Media coverage about airport air quality"
+    scientific: "Scientific Studies"
+    scientific_desc: "Research papers and academic reports"
+    report: "Official Reports"
+    report_desc: "Formal reports from institutions, ministries, or experts"
+    government: "Government Documents"
+    government_desc: "Official announcements and regulatory documents"
+    company: "Company Statements"
+    company_desc: "Corporate announcements and business initiatives"
+    political: "Political Proceedings"
+    political_desc: "Parliamentary meetings and political statements"
+    organization: "Organizations"
+    organization_desc: "NGOs, associations, and advocacy groups"
+    expert: "Expert Analysis"
+    expert_desc: "Professional opinions and commentary"
+    social: "Social Media"
+    social_desc: "Community discussions and citizen reports"

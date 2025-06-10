@@ -1,0 +1,94 @@
+app:
+  title: "AirWatch CPH"
+  subtitle: "Ultrafine Partikler & Miljøpåvirkning ved Københavns Lufthavn"
+  description: "Følg miljøproblemer, undersøgelser af ultrafine partikler og luftkvalitetsdiskussioner relateret til Københavns Lufthavn"
+
+navigation:
+  all_years: "Alle År"
+  back_to_top: "Tilbage til Top"
+
+timeline:
+  loading: "Indlæser tidslinjedata..."
+  no_data: "Ingen data tilgængelig"
+  expand: "Læs Mere"
+  collapse: "Vis Mindre"
+  external_link: "Besøg Kilde"
+
+filters:
+  title: "Filtrer Indhold"
+  all_types: "Alle Typer"
+  search_placeholder: "Søg i tidslinje..."
+  clear_search: "Ryd Søgning"
+  clear_filters: "Ryd Alle Filtre"
+
+types:
+  news: "Nyheder"
+  scientific: "Videnskabelig Undersøgelse"
+  report: "Rapport"
+  government: "Regering"
+  company: "Virksomhedserklæring"
+  political: "Politisk"
+  organization: "Organisation"
+  expert: "Ekspertanalyse"
+  social: "Sociale Medier"
+
+item_fields:
+  date: "Dato"
+  author: "Forfatter"
+  publisher: "Udgiver"
+  reference: "Reference"
+  type: "Type"
+  source: "Kilde"
+
+language:
+  switcher: "Sprog"
+  english: "Engelsk"
+  danish: "Dansk"
+
+footer:
+  github: "Se på GitHub"
+  contribute: "Bidrag med Data"
+  about: "Om Dette Projekt"
+
+messages:
+  search_no_results: "Ingen resultater fundet for din søgning"
+  filter_no_results: "Ingen elementer matcher de valgte filtre"  
+  error_loading: "Fejl ved indlæsning af tidslinjedata"
+  try_again: "Prøv Igen"
+
+add_data:
+  title: "Bidrag med Data"
+  subtitle: "Hjælp med at Bygge Tidslinjen"
+  description: "AirWatch CPH er et community-drevet projekt, der sporer luftkvalitetsnyheder, rapporter og udvikling relateret til Københavns Lufthavn."
+  what_we_accept: "Hvad Vi Accepterer"
+  how_to_contribute: "Sådan Bidrager Du"  
+  step1: "Besøg vores GitHub repository"
+  step1_desc: "Naviger til Issues-sektionen af vores GitHub projekt"
+  step2: "Opret et nyt issue"
+  step2_desc: "Brug 'New Data Point' skabelonen til at indsende dine oplysninger"
+  step3: "Udfyld detaljerne"
+  step3_desc: "Angiv titel, dato, kilde, beskrivelse og eventuelle relevante links"
+  step4: "Indsend og gennemgå"
+  step4_desc: "Vores team vil gennemgå og tilføje dit bidrag til tidslinjen"
+  button_github: "Tilføj Data på GitHub"
+  button_close: "Luk"
+  
+  types:
+    news: "Nyhedsartikler"
+    news_desc: "Mediedækning om lufthavnens luftkvalitet"
+    scientific: "Videnskabelige Studier"
+    scientific_desc: "Forskningsartikler og akademiske rapporter"
+    report: "Officielle Rapporter"
+    report_desc: "Formelle rapporter fra institutioner, ministerier eller eksperter"
+    government: "Regeringsdokumenter"
+    government_desc: "Officielle meddelelser og regulatoriske dokumenter"
+    company: "Virksomhedserklæringer"
+    company_desc: "Virksomhedsmeddelelser og forretningsinitiativer"
+    political: "Politiske Forhandlinger"
+    political_desc: "Parlamentariske møder og politiske udtalelser"
+    organization: "Organisationer"
+    organization_desc: "NGO'er, foreninger og fortalergrupper"
+    expert: "Ekspertanalyse"
+    expert_desc: "Professionelle meninger og kommentarer"
+    social: "Sociale Medier"
+    social_desc: "Fællesskabsdiskussioner og borgerrapporter"

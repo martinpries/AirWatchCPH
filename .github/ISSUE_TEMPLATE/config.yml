@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 General Discussion
+    url: https://github.com/martinpries/AirWatchCPH/discussions
+    about: Ask questions, share ideas, or discuss the project
+  - name: 📧 Contact
+    url: mailto:your-email@example.com
+    about: Direct contact for sensitive matters or partnerships
