@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { TYPE_CONFIG } from '../utils/typeConfig';
+import { getTypeConfig } from '../utils/typeConfig';
 
 interface FiltersProps {
   searchQuery: string;
@@ -143,7 +143,7 @@ export const Filters: React.FC<FiltersProps> = ({
               </h4>              
               <div className="flex flex-wrap gap-1.5">
                 {availableTypes.map((type) => {
-                  const typeConfig = TYPE_CONFIG[type] || TYPE_CONFIG.news;
+                  const typeConfig = getTypeConfig(type);
                   const isSelected = selectedTypes.includes(type);
                   
                   return (

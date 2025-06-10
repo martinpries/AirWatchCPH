@@ -35,5 +35,13 @@ export interface TypeConfig {
 }
 
 export interface TypeConfigMap {
-  [key in TimelineItemType]: TypeConfig;
+  news: TypeConfig;
+  scientific: TypeConfig;
+  report: TypeConfig;
+  government: TypeConfig;
+  company: TypeConfig;
+  political: TypeConfig;
+  organization: TypeConfig;
+  expert: TypeConfig;
+  social: TypeConfig;
 }

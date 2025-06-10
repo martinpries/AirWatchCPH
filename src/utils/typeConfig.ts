@@ -1,4 +1,4 @@
-import type { TypeConfigMap } from '../types/timeline';
+import type { TypeConfigMap, TypeConfig } from '../types/timeline';
 
 export const TYPE_CONFIG: TypeConfigMap = {
   news: {
@@ -48,7 +48,7 @@ export const TYPE_CONFIG: TypeConfigMap = {
     color: 'text-indigo-700',
     bgColor: 'bg-indigo-100',
     icon: '👨‍🔬'
-  },
+  },  
   social: {
     label: 'Social',
     color: 'text-teal-700',
@@ -56,3 +56,13 @@ export const TYPE_CONFIG: TypeConfigMap = {
     icon: '💬'
   }
 };
+
+/**
+ * Get type configuration with fallback
+ */
+export function getTypeConfig(type: string): TypeConfig {
+  if (type in TYPE_CONFIG) {
+    return TYPE_CONFIG[type as keyof typeof TYPE_CONFIG];
+  }
+  return TYPE_CONFIG.news;
+}

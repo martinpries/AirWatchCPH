@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { TimelineItem as TimelineItemType } from '../types/timeline';
-import { TYPE_CONFIG } from '../utils/typeConfig';
+import { getTypeConfig } from '../utils/typeConfig';
 
 interface TimelineItemProps {
   item: TimelineItemType;
@@ -10,12 +10,8 @@ interface TimelineItemProps {
 }
 
 export const TimelineItem: React.FC<TimelineItemProps> = ({ item, index, t }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);  
   const isEven = index % 2 === 0;
-    // Get type configuration with fallback
-  const getTypeConfig = (type: string) => {
-    return TYPE_CONFIG[type as keyof typeof TYPE_CONFIG] || TYPE_CONFIG.news;
-  };
   
   const typeConfig = getTypeConfig(item.type);
 
